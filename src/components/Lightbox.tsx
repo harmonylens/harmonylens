@@ -156,7 +156,7 @@ export default function Lightbox({
       {/* image */}
       <div className="w-full h-full flex items-center justify-center p-6 sm:p-10">
         <img
-          src={photo.src}
+          src={`${import.meta.env.BASE_URL}${photo.src.replace(/^\//, "")}`}
           alt=""
           className={[
             "max-h-full max-w-full object-contain select-none",

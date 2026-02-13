@@ -35,7 +35,7 @@ export default function Masonry({ photos }: { photos: Photo[] }) {
               aria-label="Open foto"
             >
               <img
-                src={p.src}
+                src={`${import.meta.env.BASE_URL}${p.src.replace(/^\//, "")}`}
                 alt=""
                 //w-full h-auto block cursor-pointer rounded-lg object-cover hover:brightness-95 transition
                 className="w-full h-auto block cursor-pointer"
