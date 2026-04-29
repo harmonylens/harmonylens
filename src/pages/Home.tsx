@@ -1,13 +1,14 @@
-// import rawData from "../data/photos.json";
-import Masonry from "../components/Masonry";
-// import type { PhotosData } from "../types/photos";
-import { featuredPhotos } from "../data/photos";
 
-// const data = rawData as PhotosData;
-
+}
 export default function Home() {
-  // const featured = data.photos.filter((p) => p.featured);
-  // const photosToShow = featured.length ? featured : data.photos;
+  return (
+    <div>
+      <div style={{ textAlign: "center", padding: "40px 20px" }}>
+        <h1>Harmonylens</h1>
+        <p>Where you feel at ease in front of the camera.</p>
+      </div>
 
-  return <Masonry photos={featuredPhotos()} />;
+      <Masonry photos={featuredPhotos()} />
+    </div>
+  );
 }
